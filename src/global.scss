@@ -1,0 +1,54 @@
+.app {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.file-explorer {
+  background: rgba(0,0,0,0.1);
+  overflow-y: scroll;
+}
+
+/* Context Menu */
+.rc-tree-contextmenu {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1070;
+  display: block;
+  
+  &-hidden {
+    display: none;
+  }
+
+  .menu-list {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+  
+    button {
+      border: none;
+      outline: none;
+      background: white;
+      color: #333333;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 10px 20px;
+  
+      &:hover {
+        background: #BCBCBC;
+      }
+    }
+  
+    button:not(:last-child) {
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+}
+
+.rc-tree-title {
+  vertical-align: middle !important;
+}
+
+.rc-tree li .rc-tree-node-content-wrapper {
+  height: 27px !important;
+}
